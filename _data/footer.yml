@@ -1,0 +1,19 @@
+- links:
+    - name: What We Do
+      link: /what-we-do/
+    - name: Who We Are
+      link: /who-we-are/
+    - name: Our Team
+      link: /about/
+- links:
+    - name: Experience
+      link: /clients/
+      new_window: true
+    - name: Blog
+      link: /blog/
+      new_window: true
+- links:
+    - name: LinkedIn
+      link: 'https://www.linkedin.com/company-beta/24779205'
+      new_window: true
+      social_icon: LinkedIn
