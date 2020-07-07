@@ -3,6 +3,13 @@ title: Contact
 heading: Get in touch today
 ---
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- <style>
+	.reCaptchaClass {margin-top: 1em;}
+</style> -->
+
+
 <div class="contact-box">
 	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 		<input type="hidden" name="_to" value="b.stec@hilltopalliance.com" />
@@ -17,8 +24,19 @@ heading: Get in touch today
 		<label for="message">Message</label>
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
 
-		<input type="submit" value="Send Message" />
+<!-- 		<input type="submit" value="Send Message" /> -->
+		
+	        <div class="g-recaptcha" style="margin-top: 1.8em;" data-sitekey="6LdBx6cZAAAAAMe_wkkY7LW70c-WV7otxd7FtLKK"></div>
+	        <br/>
+	        <input type="submit" value="Send Message" style="margin-top: .2em;">
+		
 	</form>
+	
+<!-- 	<form action="?" method="POST"> -->
+<!-- 	      <div class="g-recaptcha" data-sitekey="6LdBx6cZAAAAAMe_wkkY7LW70c-WV7otxd7FtLKK"></div>
+	      <br/>
+	      <input type="submit" value="Submit"> -->
+<!--     	</form> -->
 </div>
 
 <script type="text/javascript">
