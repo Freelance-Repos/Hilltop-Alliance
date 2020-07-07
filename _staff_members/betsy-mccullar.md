@@ -16,6 +16,5 @@ blurb: >-
   turnaround strategies and crisis communication. Betsy is working with a
   UK-based private equity group seeking investment opportunities where maximum
   long term value can be achieved by turning around under-performing brands and
-  leveraging emerging market distribution. Email Betsy at
-  betsy@hilltopalliance.com.
+  leveraging emerging market distribution.
 ---
