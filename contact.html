@@ -5,9 +5,32 @@ heading: Get in touch today
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!-- <style>
-	.reCaptchaClass {margin-top: 1em;}
-</style> -->
+<!-- Below is function for google reCaptcha validation to ensure reCaptcha is complete before proceeding -->
+<!-- <script>
+    function enableBtn(){
+        document.getElementById("submit_details").disabled = false;
+    }
+</script> -->
+
+<!-- if (grecaptcha.getResponse() == ""){
+    alert("You can't proceed!");
+} else {
+    alert("Thank you");
+} -->
+
+<!-- 
+<script>
+	var captchResponse = $('#g-recaptcha-response').val();
+	if(captchResponse.length == 0 )
+	    //user has not yet checked the 'I am not a robot' checkbox
+	else 
+	    //user is a verified human and you are good to submit your form now
+</script>
+ -->
+
+<script>
+	function doSomething() { alert(1); }
+</script>
 
 
 <div class="contact-box">
@@ -26,7 +49,7 @@ heading: Get in touch today
 
 <!-- 		<input type="submit" value="Send Message" /> -->
 		
-	        <div class="g-recaptcha" style="margin-top: 1.8em;" data-sitekey="6LdBx6cZAAAAAMe_wkkY7LW70c-WV7otxd7FtLKK"></div>
+	        <div class="g-recaptcha" style="margin-top: 1.8em;" data-sitekey="6LdBx6cZAAAAAMe_wkkY7LW70c-WV7otxd7FtLKK" data-callback='doSomething'></div>
 	        <br/>
 	        <input type="submit" value="Send Message" style="margin-top: .2em;">
 		
