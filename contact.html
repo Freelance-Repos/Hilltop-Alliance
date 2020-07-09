@@ -6,48 +6,19 @@ heading: Get in touch today
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Below is function for google reCaptcha validation to ensure reCaptcha is complete before proceeding -->
-<!-- <script>
-    function enableBtn(){
-        document.getElementById("submit_details").disabled = false;
-    }
-</script> -->
 
-<!-- if (grecaptcha.getResponse() == ""){
-    alert("You can't proceed!");
-} else {
-    alert("Thank you");
-} -->
-
-<!-- 
 <script>
-	var captchResponse = $('#g-recaptcha-response').val();
-	if(captchResponse.length == 0 )
-	    //user has not yet checked the 'I am not a robot' checkbox
-	else 
-	    //user is a verified human and you are good to submit your form now
-</script> -->
-
-<!-- 
-<script>
-	function doSomething() { alert(1); }
+var captchResponse = document.querySelector('#g-recaptcha-response').valueOf();
+if(captchResponse.length == 0 )
+    //user has not yet checked the 'I am not a robot' checkbox
+else 
+    //user is a verified human and you are good to submit your form now
+	
 </script>
- -->
-
-<script>
-	var isCaptchaValidated = false;
-	var response = grecaptcha.getResponse();
-	if(response.length == 0) {
-	    isCaptchaValidated = false;
-	    toast('Please verify that you are a Human.');
-	} else {
-	    isCaptchaValidated = true;
-}
 
 
-if (isCaptchaValidated ) {
-    //you can now submit your form
-}
-</script>
+
+
 
 <div class="contact-box">
 	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
