@@ -8,7 +8,8 @@ heading: Get in touch today
 <!-- Below is function for google reCaptcha validation to ensure reCaptcha is complete before proceeding -->
 
 <script>
-var captchResponse = document.querySelector('#g-recaptcha-response').valueOf();
+// var captchResponse = document.querySelector('#g-recaptcha-response').valueOf();
+var captchResponse = document.querySelector('.g-recaptcha').valueOf();
 if(captchResponse.length == 0 )
     //user has not yet checked the 'I am not a robot' checkbox
 else 
