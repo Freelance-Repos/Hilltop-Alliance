@@ -9,7 +9,7 @@ heading: Get in touch today
 
 <script>
 // var captchResponse = document.querySelector('#g-recaptcha-response').valueOf();
-var captchResponse = document.querySelector('.g-recaptcha').valueOf();
+var captchResponse = document.querySelector('#g-recaptcha-response').value();
 if(captchResponse.length == 0 )
     //user has not yet checked the 'I am not a robot' checkbox
 else 
